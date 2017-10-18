@@ -3,13 +3,15 @@ body, html{
 }
 body{
   margin: 0px;
+  background-image: url('https://vectortoons.com/wp-content/uploads/2015/09/a-groovy-looking-nightclub-dance-floor-background.jpg');
+  background-size: cover;
   background-color:#444;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addRenButton, .addGiraffeButton, .lineUpButton {
   padding:5px 12px;
   float:right;
 }
@@ -21,7 +23,52 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  /*content: url("https://i.imgur.com/ErtWFhx.png");*/
+ /* border:10px solid red;
+  border-radius:10px;*/
+  content: url('https://i.imgur.com/a67Vd4w.png');
+ 
+  height: 110px;
+  
   position:absolute;
+}
+
+/*.addRenButton {
+  content: url("https://i.imgur.com/ErtWFhx.png");
+  padding:5px 12px;
+  float: right;
+ 
+
+
+
+}*/
+@keyframes moveRen {
+    0%   {top: 50px; left: 30%;}
+    25%  {top: 100px; left: 80%;}
+    50%  {top: 200px; left: 60%;}
+    75%  {top: 200px; left: 40%;}
+    100% {top: 100px; left: 0px;}
+}
+
+.bigRen {
+  content: url("https://i.imgur.com/ErtWFhx.png");
+  height: 110px;
+  animation: moveRen 10s infinite shake;
+  
+  /*width: 5em;*/
+  /*animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;*/
+  position: absolute;
+} 
+
+.lineUp {
+  height: 10px;
+}
+
+.giraffe {
+  
+  content: url('https://media.giphy.com/media/w5VzIcYO1hTIQ/giphy.gif');
+  height: 160px;
+  position: absolute;
 }
